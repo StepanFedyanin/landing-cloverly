@@ -1,0 +1,30 @@
+.mySwiper--customs {
+	background-color: #1d3954;
+	border-radius: 10px;
+}
+.swiper-pagination-horizontal {
+	background-color: #142f4a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	.swiper-pagination-bullet {
+		height: fit-content;
+		width: fit-content;
+		background: none;
+		opacity: 1;
+		margin: 0;
+	}
+	.swiper-pagination-custom {
+		color: #ffffff;
+		bottom: 0;
+		&.swiper-pagination-bullet-active {
+			padding: 7px 15px;
+			background-color: #33506b;
+			border-radius: 100px;
+		}
+	}
+}
+.swiper-pagination-bullets {
+	bottom: none;
+}

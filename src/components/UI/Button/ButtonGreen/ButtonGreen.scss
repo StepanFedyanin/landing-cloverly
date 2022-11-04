@@ -1,0 +1,15 @@
+@use "../../../../style/StyleImport.scss" as mixin;
+
+.ButtonGreen {
+    border-radius: 50px;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: mixin.$colorGreen;
+    @include mixin.button-white-dark(#ffffff);
+
+    &:hover {
+        background: mixin.$colorWhite;
+        @include mixin.button-white-dark(#00CA90);
+    }
+}

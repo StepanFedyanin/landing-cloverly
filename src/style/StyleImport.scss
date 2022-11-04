@@ -1,0 +1,137 @@
+@mixin STNavEl($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STTitle($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(40px + (20 + 20 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STIndexText($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(15px + (3 + 3 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+
+@mixin STSize36($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(24px + (12 + 12 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STSize21($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(16px + (5 + 5 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STSize13($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STSize14($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STSize18($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	color: $color;
+}
+@mixin STSize25($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(19px + (6 + 6 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+@mixin button-transparent($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	color: $color;
+}
+
+@mixin button-white-dark($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 16px;
+	color: $color;
+}
+
+@mixin title($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(30px + (12 + 12 * 0.7) * ((100vw - 375px) / 1440));
+
+	line-height: 1.5;
+	color: $color;
+}
+
+@mixin titleItem($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(19px + (4 + 4 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+
+@mixin textItem($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: calc(14px + (1 + 1 * 0.7) * ((100vw - 375px) / 1440));
+	line-height: 1.5;
+	color: $color;
+}
+
+@mixin title32($color) {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 43px;
+	color: $color;
+}
+@mixin container() {
+	max-width: 1130px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+$colorGreen: #1fbd8a;
+$colorBlue: #192f44;
+$colorWhite: #ffffff;
+$colorGrey: #f2f4e8;

@@ -1,0 +1,70 @@
+@use "../../style//StyleImport.scss" as style;
+.ActivitiesOffset {
+	background-color: #f2f4e8;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 10%;
+	.ActivitiesOffset__container {
+		@include style.container();
+		margin: 0 auto;
+	}
+}
+.ActivitiesOffset__advertising {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f2f4e8 217.84%), #193844;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 74px 0 61px 0;
+	margin-bottom: 20%;
+	.ActivitiesOffset__advertising--title {
+		.ActivitiesOffset__title--style {
+			@include style.STSize36(#ffffff);
+		}
+	}
+	.ActivitiesOffset__advertising--info {
+		width: 35%;
+		margin-bottom: 20px;
+		.ActivitiesOffset__info--text {
+			@include style.STSize21(#ffffff);
+			text-align: center;
+		}
+	}
+	.ActivitiesOffset__advertising--btn {
+		margin-top: 19px;
+	}
+}
+
+.ActivitiesOffset__news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.ActivitiesOffset__news--for {
+		margin-bottom: 5px;
+		.ActivitiesOffset__for--text {
+			@include style.STSize18(style.$colorGreen);
+		}
+	}
+	.ActivitiesOffset__news--title {
+		margin: 4px 0 31px 0;
+		.ActivitiesOffset__title--style {
+			@include style.title(style.$colorBlue);
+		}
+	}
+	.ActivitiesOffset__news--btn {
+		margin: 31px 0 0 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.ActivitiesOffset {
+		padding: 0;
+	}
+	.ActivitiesOffset__advertising {
+		padding: 20px 20px;
+		.ActivitiesOffset__advertising--info {
+			width: 100%;
+		}
+	}
+}

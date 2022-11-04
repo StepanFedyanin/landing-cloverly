@@ -1,0 +1,94 @@
+@use "../../style/StyleImport.scss" as style;
+.IntegrationApi {
+	height: 100vh;
+	display: flex;
+	background-color: style.$colorBlue;
+	.IntegrationApi__container {
+		@include style.container();
+
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&.IntegrationApi__letter {
+			display: none;
+		}
+		.IntegrationApi__show {
+			width: 47%;
+		}
+	}
+}
+.IntegrationApi__content {
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+	.IntegrationApi__content--for {
+		margin: 0 0 5px 0;
+	}
+	.IntegrationApi__content--title {
+		margin: 4px 0 6px 0;
+	}
+	.IntegrationApi__content--description {
+		margin: 6px 0 12px 0;
+	}
+	.IntegrationApi__content--btn {
+		margin: 12px 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		gap: 24px;
+		button {
+			padding: 15px 70px;
+		}
+	}
+}
+.IntegrationApi__for--text {
+	@include style.STSize18(#00ca90);
+}
+.IntegrationApi__title--text {
+	@include style.STTitle(#ffffff);
+}
+.IntegrationApi__description--text {
+	@include style.STSize18(#ffffff);
+}
+
+@media (max-width: 992px) {
+	.IntegrationApi {
+		height: 100%;
+		padding: 30px 0;
+		display: flex;
+		.IntegrationApi__container {
+			flex-direction: column-reverse;
+			justify-content: space-between;
+			&.IntegrationApi__letter {
+				display: flex;
+				align-items: center;
+				width: fit-content;
+				align-content: flex-end;
+			}
+			.IntegrationApi__content {
+				width: 100%;
+				margin: 40px 0 0 0;
+				.IntegrationApi__content--letter {
+					display: none;
+				}
+			}
+			.IntegrationApi__show {
+				width: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 576px) {
+	.IntegrationApi__content {
+		.IntegrationApi__content--btn {
+			margin: 12px 0 0 0;
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			gap: 24px;
+			button {
+				padding: 15px 70px;
+			}
+		}
+	}
+}

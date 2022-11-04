@@ -1,0 +1,166 @@
+// @import url(../../../style/StyleImport.scss);
+@use "../../style/StyleImport.scss" as mixin;
+
+.Header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	height: 70px;
+	background-color: mixin.$colorGreen;
+	display: flex;
+	align-items: center;
+
+	.Header__container {
+		padding: 20px 0;
+		display: flex;
+		width: 100%;
+		@include mixin.container;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	box-shadow: 0px 5.69882px 9.49804px rgba(19, 40, 29, 0.098);
+}
+
+.Header__info {
+	display: flex;
+	align-items: center;
+
+	.Header__logo {
+		max-width: 111px;
+		margin-right: 25px;
+	}
+}
+
+.nav--list {
+	display: flex;
+	align-items: center;
+
+	.nav__list--item {
+		margin: 0 22.5px;
+
+		a {
+			@include mixin.STNavEl(#ffffff);
+			cursor: pointer;
+
+			&:hover {
+				color: mixin.$colorBlue;
+			}
+		}
+	}
+}
+
+.Login {
+	display: flex;
+	align-items: center;
+
+	.Login__a {
+		margin: 0 35px 0 0;
+
+		a {
+			@include mixin.STNavEl(#ffffff);
+
+			&:hover {
+				color: mixin.$colorBlue;
+			}
+		}
+	}
+}
+
+.Burger {
+	position: relative;
+	width: 30px;
+	height: 21px;
+	display: none;
+	cursor: pointer;
+
+	span {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: mixin.$colorBlue;
+		top: 8.7px;
+		border-radius: 20px;
+	}
+
+	&::before,
+	&::after {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: mixin.$colorBlue;
+		border-radius: 20px;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+}
+
+@media (max-width: 873px) {
+	.Header {
+		.Header__container {
+			padding: 0 20px;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		transition: all 0.6s;
+	}
+
+	.activeHeader {
+		height: 100%;
+		transition: all 0.6s;
+	}
+
+	.Burger {
+		position: absolute;
+		top: 0;
+		right: 20px;
+		margin-top: 20px;
+		display: block;
+	}
+
+	.nav {
+		display: none;
+		position: absolute;
+		transition: all 0.5s;
+		left: 0;
+		right: 0;
+		top: 100px;
+
+		.nav--list {
+			display: flex;
+			flex-direction: column;
+
+			.nav__list--item {
+				margin-bottom: 20px;
+
+				a {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+
+	.activeNav {
+		transition: all 0.5s;
+		display: block;
+	}
+
+	.Header__logo {
+		position: absolute;
+		top: 16px;
+	}
+
+	.Login {
+		display: none;
+	}
+}

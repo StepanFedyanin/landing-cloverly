@@ -1,0 +1,16 @@
+// @import url(../../../style/StyleImport.scss);
+@use "../../../../style/StyleImport.scss" as mixin;
+.ButtonFirstContent {
+    border-radius: 50px;
+    border: none;
+    padding: 15px 90px;
+    .ButtonFirstContentText {
+        @include mixin.STNavEl(#24475b);
+    }
+    &:hover {
+        background: #24475b;
+    }
+    &:hover .ButtonUIText {
+        @include mixin.STNavEl(#ffffff);
+    }
+}

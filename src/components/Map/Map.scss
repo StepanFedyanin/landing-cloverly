@@ -1,0 +1,52 @@
+@use "../../style/StyleImport.scss" as mixin;
+
+.MapContent {
+	background-color: mixin.$colorWhite;
+	// min-height: 100vh;
+	margin: 0 auto;
+	@include mixin.container;
+
+	.MapInfo {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 840px;
+		text-align: center;
+
+		.MapSpan {
+			@include mixin.STIndexText(#00ca90);
+			margin-top: 150px;
+		}
+
+		.MapTitle {
+			margin-top: 9px;
+			margin-bottom: 13px;
+			.MapTitle__text {
+				@include mixin.title(#013a51);
+			}
+		}
+
+		.MapText {
+			.MapText__text {
+				@include mixin.STIndexText(#013a51);
+			}
+		}
+	}
+
+	.MapButton {
+		margin-top: 20px;
+		gap: 12px;
+		display: flex;
+		justify-content: center;
+
+		.MapButton--item {
+			width: 50%;
+			max-width: 260px;
+		}
+	}
+
+	.MapImage {
+		max-width: 1090px;
+		max-height: 538px;
+		margin: 60px auto 150px;
+	}
+}

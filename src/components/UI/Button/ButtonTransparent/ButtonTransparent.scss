@@ -1,0 +1,10 @@
+@use "../../../../style/StyleImport.scss" as mixin;
+
+.ButtonTransparent {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 33px;
+    @include mixin.button-transparent(#ffffff);
+    border: none;
+    width: 200px;
+    height: 33px;
+}

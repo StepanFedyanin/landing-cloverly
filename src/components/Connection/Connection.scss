@@ -1,0 +1,167 @@
+@use "../../style/StyleImport.scss" as mixin;
+
+.ConnectionContainer {
+	background-color: mixin.$colorGrey;
+	.ConnectionContent {
+		display: flex;
+		gap: 120px;
+		margin-right: auto;
+		margin-left: auto;
+		@include mixin.container;
+		padding-bottom: 85px;
+
+		.ConnectionLeft {
+			margin-top: 150px;
+		}
+
+		.ConnectionRight {
+			margin-top: 150px;
+		}
+	}
+}
+.ConnectionInfo {
+	.ConnectionSpan {
+		@include mixin.STIndexText(#00ca90);
+	}
+
+	.ConnectionTitle {
+		margin: 10px 0px;
+		@include mixin.title(#013a51);
+		max-width: 480px;
+	}
+
+	.ConnectionText {
+		@include mixin.STIndexText(#013a51);
+		margin-bottom: 20px;
+		max-width: 450px;
+		text-align: justify;
+	}
+}
+.ConnectionItem {
+	margin-bottom: 60px;
+
+	.ConnectionItem--img {
+		margin-bottom: 13px;
+		max-width: 88px;
+	}
+
+	.ConnectionItem--title {
+		@include mixin.titleItem(#013a51);
+		margin-bottom: 10px;
+	}
+
+	.ConnectionItem--text {
+		@include mixin.textItem(#5c7782);
+		max-width: 430px;
+	}
+}
+@media (max-width: 768px) {
+	.ConnectionContainer {
+		background-color: mixin.$colorGrey;
+		.ConnectionContent {
+			flex-direction: column;
+			gap: 20px;
+			padding-bottom: 50px;
+			.ConnectionLeft {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.ConnectionRight {
+				margin-top: 75px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+	.ConnectionInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.ConnectionSpan {
+			@include mixin.STIndexText(#00ca90);
+		}
+
+		.ConnectionTitle {
+			text-align: center;
+			margin: 10px 0px;
+			max-width: 100%;
+		}
+
+		.ConnectionText {
+			text-align: center;
+			margin-bottom: 20px;
+			max-width: 100%;
+		}
+	}
+	.ConnectionItem {
+		display: flex;
+		margin-bottom: 60px;
+		flex-direction: column;
+		align-items: center;
+		max-width: 500px;
+		.ConnectionItem--img {
+			margin-bottom: 13px;
+			max-width: 100px;
+		}
+
+		.ConnectionItem--title {
+			margin-bottom: 10px;
+		}
+
+		.ConnectionItem--text {
+			max-width: 100%;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.ConnectionContainer {
+		background-color: mixin.$colorGrey;
+		.ConnectionContent {
+			flex-direction: column;
+			gap: 20px;
+			padding-bottom: 50px;
+			.ConnectionLeft {
+				margin-top: 75px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.ConnectionInfo {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.ConnectionTitle {
+						text-align: center;
+					}
+				}
+			}
+			.ConnectionRight {
+				margin-top: 45px;
+			}
+		}
+	}
+	.ConnectionItem {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+		align-items: center;
+		justify-content: space-evenly;
+		max-width: 100%;
+
+		.ConnectionItem--img {
+			margin-bottom: 13px;
+			max-width: 88px;
+		}
+
+		.ConnectionItem--title {
+			@include mixin.titleItem(#013a51);
+			margin-bottom: 10px;
+		}
+
+		.ConnectionItem--text {
+			margin-top: 10px;
+		}
+	}
+}
