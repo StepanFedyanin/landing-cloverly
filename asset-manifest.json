@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/landing-cloverly/static/css/main.cfbe7a32.css",
+    "main.js": "/landing-cloverly/static/js/main.867e6d61.js",
+    "static/media/map.svg": "/landing-cloverly/static/media/map.effab678c3fbe33f7d396379302fb09f.svg",
+    "static/media/CreatorPhoto.png": "/landing-cloverly/static/media/CreatorPhoto.774d8eeb0c392db68e3c.png",
+    "static/media/bgFirstContent.png": "/landing-cloverly/static/media/bgFirstContent.a8fb5391a0be6dcda355.png",
+    "static/media/slide6.png": "/landing-cloverly/static/media/slide6.744050d4d51b63909675.png",
+    "static/media/slide3.png": "/landing-cloverly/static/media/slide3.ef184b4e786169494db8.png",
+    "static/media/slide5.png": "/landing-cloverly/static/media/slide5.a31fc47a3c89c8120272.png",
+    "static/media/fintech.svg": "/landing-cloverly/static/media/fintech.f3a3f6b97036a507af88578946b355ab.svg",
+    "static/media/slide4.png": "/landing-cloverly/static/media/slide4.ed00e43429b48fa0ad58.png",
+    "static/media/sponsor.png": "/landing-cloverly/static/media/sponsor.d145251cbe327986bc6e.png",
+    "static/media/rideshare.svg": "/landing-cloverly/static/media/rideshare.f3f2ea77b03f6311874fc579057336ab.svg",
+    "static/media/energy.svg": "/landing-cloverly/static/media/energy.c1cc8ad7f5df545d3c202c474f1bd475.svg",
+    "static/media/ecommerce.svg": "/landing-cloverly/static/media/ecommerce.40dcafed3a3a0cfad61c97292070928b.svg",
+    "static/media/enterprise.svg": "/landing-cloverly/static/media/enterprise.3316c1924c8632b4269afc813b0df151.svg",
+    "static/media/slide1.png": "/landing-cloverly/static/media/slide1.b5e8ff670a5ffa33c6ec.png",
+    "static/media/flights.svg": "/landing-cloverly/static/media/flights.94bc7412a65578bccdd177604900b0f3.svg",
+    "static/media/fleet.svg": "/landing-cloverly/static/media/fleet.70aed957a819b2ee2b354880adb2fdce.svg",
+    "static/media/Frame.svg": "/landing-cloverly/static/media/Frame.d35e30dfaecb7a95a74f5ae0f87f0a15.svg",
+    "static/media/slide2.png": "/landing-cloverly/static/media/slide2.6c064e0e6aaa238b433b.png",
+    "static/media/item1.svg": "/landing-cloverly/static/media/item1.36a13c66d9aabb9a11c6b24faa915b41.svg",
+    "static/media/supply.svg": "/landing-cloverly/static/media/supply.6285658b23bf6845ae35f38785b528d0.svg",
+    "static/media/item2.svg": "/landing-cloverly/static/media/item2.8bda1d03406013b8de275e159de3b562.svg",
+    "static/media/item3.svg": "/landing-cloverly/static/media/item3.806bc5b2c819055abfb77152ec66b77a.svg",
+    "index.html": "/landing-cloverly/index.html",
+    "main.cfbe7a32.css.map": "/landing-cloverly/static/css/main.cfbe7a32.css.map",
+    "main.867e6d61.js.map": "/landing-cloverly/static/js/main.867e6d61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfbe7a32.css",
+    "static/js/main.867e6d61.js"
+  ]
+}
